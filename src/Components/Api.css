@@ -1,0 +1,54 @@
+/* Estilos para la frase */
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  text-align: center;
+  color: black;
+}
+
+.post-display {
+  margin: 20px 0;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+}
+
+/* Modo oscuro */
+body.dark-mode .container {
+  background-color: #333;
+  color: white;
+}
+
+body.dark-mode h1 {
+  color: white;
+}
+
+body.dark-mode h3 {
+  color: white;
+}
+
+body.dark-mode p {
+  color: white;
+}
+
+
+
+body.dark-mode .card {
+  background-color: #444;
+  border-color: #666;
+}
+
+body.dark-mode .button-container button {
+  background-color: #555;
+  color: white;
+}
+
+body.dark-mode .button-container button:hover {
+  background-color: #777;
+}

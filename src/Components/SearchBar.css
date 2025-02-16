@@ -1,0 +1,124 @@
+/* Estilo global para asegurar que el body ocupe toda la altura */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background-color: #121212; /* Fondo oscuro consistente */
+  color: #ffffff;
+  overflow-x: hidden; /* Evita el scroll horizontal */
+}
+
+/* Asegurar que .search-container ocupe toda la altura si no hay resultados */
+body.dark-mode .search-container {
+  min-height: 100vh; /* Ocupa toda la altura visible del navegador */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Lista de resultados centrada */
+body.dark-mode .hits-list {
+  width: 100%; /* Para que los resultados no sobrepasen el contenedor */
+}
+
+/* Estilo del cuadro de búsqueda */
+body.dark-mode .searchbox-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* Botones de la caja de búsqueda */
+.searchbox-submit,
+.searchbox-reset {
+  display: none;
+}
+
+/* Lista de resultados */
+.hits-list {
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+}
+
+body.dark-mode .hits-item {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .hit h4 {
+  color: #00d1b2;
+  margin-bottom: 5px;
+}
+
+body.dark-mode .hit p {
+  color: #b0b0b0;
+}
+
+/* Estilo global para asegurar que el body ocupe toda la altura */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background-color: #ffffff; /* Fondo claro */
+  color: #000000; /* Texto oscuro */
+  overflow-x: hidden; /* Evita el scroll horizontal */
+}
+
+/* Asegurar que .search-container ocupe toda la altura si no hay resultados */
+.search-container {
+    min-height: 100vh; /* Ocupa toda la altura visible del navegador */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff; /* Fondo claro */
+    color: #000000; /* Texto oscuro */
+  }
+
+  .searchbox-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #000;
+    font-size: 16px;
+  }
+  
+  .hits-item {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Fondo claro */
+  }
+  
+  .hit h4 {
+    color: #00d1b2;
+    margin-bottom: 5px;
+  }
+  
+  .hit p {
+    color: #606060;
+  }  
+
+  

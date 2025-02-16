@@ -1,0 +1,93 @@
+.task-manager {
+  padding: 20px;
+  background-color: var(--bg-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: 0 auto;
+  color: var(--text-color);
+}
+
+body.dark-mode .task-manager{
+    background-color: rgb(35, 35, 35);
+}
+
+.task-manager h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.task-input-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+
+
+body.dark-mode .task-input-container input {
+  background-color: white;
+  color: black;
+}
+
+.task-input-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task-input-container button:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: var(--card-bg);
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.task-item.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.task-item button {
+  background-color: var(--error-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+#button1{
+    color: black;
+}
+
+body.dark-mode #button1{
+    color: white;
+}
+
+.task-item button:hover {
+  background-color: var(--error-color-dark);
+}
+
+html, body {
+  height: 100%; /* Asegura que todo el viewport esté cubierto */
+}

@@ -1,0 +1,44 @@
+:root {
+  --primary-color: #5c6bc0; /* Azul */
+  --secondary-color: #d4f5d4; /* Verde claro (usuario) */
+  --background-color: #f4f7fc;
+  --text-color: #333;
+  --border-color: #ddd;
+}
+
+.chatbox {
+  max-width: 500px; /* Ancho máximo */
+  min-height: 300px; /* Altura mínima */
+  width: 90%; /* Ocupa el 90% del ancho disponible */
+  background-color: var(--background-color);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif; /* Ejemplo de fuente (debes importarla) */
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+}
+
+
+.message.user {
+  background-color: var(--secondary-color);
+  align-self: flex-end;
+}
+
+.input-container input {
+  /* ... otros estilos */
+  border: 1px solid var(--border-color);
+}
+
+/* Media query para móviles */
+@media (max-width: 400px) {
+  .chatbox {
+    width: 95%; /* Más ancho en móviles */
+  }
+  .message {
+    max-width: 90%; /* Mensajes más anchos en móviles */
+  }
+}

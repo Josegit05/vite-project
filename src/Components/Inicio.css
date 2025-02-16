@@ -1,0 +1,25 @@
+/* Estilos para el componente de inicio */
+
+.inicio-container {
+    padding: 40px;
+    text-align: center;
+    background-color: #f0f8ff;
+    color: #333;
+  }
+  
+  .inicio-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .inicio-container p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+
+  body.dark-mode .inicio-container{
+    background-color: rgb(52, 47, 47);
+    color: white;
+  }
+
+  
