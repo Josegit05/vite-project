@@ -7,30 +7,51 @@
 }
 
 .chatbox {
-  max-width: 500px; /* Ancho máximo */
-  min-height: 300px; /* Altura mínima */
-  width: 90%; /* Ocupa el 90% del ancho disponible */
+  position: fixed;
+  /* Ajusta estas cuatro propiedades para centrar */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  max-width: 500px;
+  min-height: 300px;
+  width: 90%;
   background-color: var(--background-color);
   border-radius: 10px;
-  display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  font-family: 'Roboto', sans-serif; /* Ejemplo de fuente (debes importarla) */
+  font-family: 'Roboto', sans-serif;
   color: var(--text-color);
   border: 1px solid var(--text-color);
+  z-index: 9999; 
 }
-
+.chatbot-toggle {
+  position: fixed;
+  bottom: 20px;          /* Distancia desde el fondo */
+  left: 50%;             /* Coloca el punto de anclaje en el centro horizontal */
+  transform: translateX(-50%);  /* Ajusta para centrar el botón */
+  background-color: var(--primary-color); /* O el color que prefieras */
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: auto;           /* Ajusta el tamaño según tus necesidades */
+  height: auto;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  z-index: 9999;         /* Para que siempre esté encima */
+}
 
 .message.user {
   background-color: var(--secondary-color);
-  align-self: flex-end;
+  align-self: flex-start;
 }
 
 .input-container input {
   /* ... otros estilos */
   border: 1px solid var(--border-color);
+
 }
 
 /* Media query para móviles */

@@ -23,14 +23,15 @@ function App() {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossOrigin="anonymous"></link>
         <h1>Proyecto Dad</h1>
         <NavBar />
-        <button
+        
+      </div>
+      <button
         className="chatbot-toggle"
         onClick={() => setShowChatbot(!showChatbot)}
       >
         {showChatbot ? "Cerrar Ayudante" : "Te ayudamos"}
       </button>
       <ChatbotComponent show={showChatbot} />
-      </div>
       <ThemeProvider>
           <LoginProvider>
             <Routes>
